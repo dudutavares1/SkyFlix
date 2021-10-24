@@ -1,0 +1,10 @@
+<h1 class="titulo1"> Desenvolvimento</h1>
+<div class="card principal" *ngFor="let programa of page">
+  <img src="{{programa.imagem}}" class="card_imagem" alt="#">
+  <div class="card-body">
+    <h4 class="card-title">}</h4>
+    <h6>Informações</h6>
+    <span class="Plataforma ">Plataforma: {{programa.plataforma}}</span><br>
+    <button type="button" class="btn btn-dark"><a href={{programa.link}} target=_blank>Download</a> </button>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.principal {
+  padding: 8px;
+  display: inline-block;
+  width: 16rem;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.principal img {
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 20rem;
+}
+
+.info {
+  color: #5e5c5c;
+}
+
+.info i {
+  font-size: 20px;
+}
+
+.card-title {
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  font-size: 15px;
+}
+
+h6 {
+  text-align: center;
+  margin-top: -50px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+}
+
+.lancamento {
+  font-size: 12px;
+}
+
+.Plataforma {
+  font-size: 12px;
+}
+
+.Genero {
+  font-size: 12px;
+}
