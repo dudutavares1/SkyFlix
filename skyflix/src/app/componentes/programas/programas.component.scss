@@ -19,23 +19,20 @@ img {
 }
 
 .principal {
-  background-color: rgb(255, 255, 255);
   padding: 8px;
   display: inline-block;
-  width: 180px;
-  height: 250px;
+  width: 16rem;
   margin: 15px;
   border-radius: 10px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card_imagem {
-  padding: 8px;
-  width: 130px;
-  display: flexbox;
-  height: 100px;
-}
+.principal img {
 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 20rem;
+}
 
 .info {
   color: #5e5c5c;
@@ -66,7 +63,6 @@ h6 {
 
 .Plataforma {
   font-size: 12px;
-  text-align: center;
 }
 
 .Genero {
