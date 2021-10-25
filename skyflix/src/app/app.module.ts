@@ -7,24 +7,18 @@ import { MenuComponent } from './views/menu/menu.component';
 import { RodapeComponent } from './views/rodape/rodape.component';
 
 import { HttpClientModule } from '@angular/common/http';
-
+import { ProgramasComponent } from './componentes/programas/programas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     RodapeComponent,
-    JogosComponent
-
-
-
-   ],
-  imports: [
-    BrowserModule,
-		HttpClientModule,
-    AppRoutingModule
+    JogosComponent,
+    ProgramasComponent,
   ],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
