@@ -10,7 +10,7 @@ import { JogoService } from 'src/app/services/jogos.service';
 export class JogosComponent implements OnInit {
   jogos: Jogo[] = [];
 
-  constructor( private jogoService: JogoService) {}
+  constructor(private jogoService: JogoService) {}
 
   ngOnInit() {
     this.jogoService.getCategorias().subscribe((jogos) => {

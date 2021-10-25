@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Programas } from 'src/app/objects/programas';
+import { ProgramasService } from 'src/app/services/programas.service';
 
 @Component({
   selector: 'app-programas',
@@ -8,8 +9,14 @@ import { Programas } from 'src/app/objects/programas';
 })
 export class ProgramasComponent implements OnInit {
   programas: Programas[] = [];
+  programasService: any;
 
-  constructor() {}
+  constructor(private Service: ProgramasService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.programasService.getCategorias().subscribe((programas: Programas[]) => {
+      this.programas = programas;
+      console.log(programas);
+    });
+  }
 }

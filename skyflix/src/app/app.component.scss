@@ -1,8 +1,7 @@
-
 @font-face {
- 
-    font-family: ScorchedEarthDEMO-KCFonts;
-    src: url(/assets/Fontes/ScorchedEarthDEMO-KCFonts.otf);
+
+  font-family: ScorchedEarthDEMO-KCFonts;
+  src: url(/assets/Fontes/ScorchedEarthDEMO-KCFonts.otf);
 
 }
 
@@ -11,24 +10,18 @@
 
 
 .h1 {
-    font-family: fantasy;
-    display: block;
-    position: fixed;
+  font-family: fantasy;
+  display: block;
+  position: fixed;
 }
 
 main {
-    height: 92vh;
-    margin-top: 18px;
-    display: block;
-    position: relative;
+  height: 92vh;
+  margin-top: 18px;
+  display: block;
+  position: relative;
 
 }
 
 
-app-menu{
-
-}
-
-
-
-
+app-menu {}

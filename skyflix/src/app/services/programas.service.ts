@@ -6,13 +6,13 @@ import { Observable, EMPTY } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class JogoService {
+export class ProgramasService {
   baseUrl = 'http://localhost:3001/programas';
 
   constructor(private http: HttpClient) {}
 
   getCategorias(): Observable<Programas[]> {
-   // const url = `${this.baseUrl}/${categoria}`;
+    // const url = `${this.baseUrl}/${categoria}`;
     return this.http.get<Programas[]>(this.baseUrl);
   }
 }
