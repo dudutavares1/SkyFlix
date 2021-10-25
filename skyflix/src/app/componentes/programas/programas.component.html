@@ -1,13 +1,6 @@
-<div class="card principal">
-  <h3 class="titulo1"> Programas</h3>
-  <img src="{{descricao.imagem}}" class="card_imagem" alt="#" *ngFor="let programa of descricao">
-  <div class="card-body">
-    <h4 class="card-title">{{descricao.titulo}}</h4><br>
-    <h6>Informações</h6>
-    <span class="lancamento">Lançamento: </span><br>
-    <span class="Plataforma ">Plataforma: {{descricao.plataforma}}</span><br>
-    <span class="Genero">Genero: {{descricao.titulo}}</span><br> <br>
-  </div>
+
+<div ngFor="let item of items">
+  <h1>{{items.titulo}}</h1>
+  <img src="{{items.imagem}}" alt="">
+  <h1>teste</h1>
 </div>
-
-

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./programas.component.scss'],
 })
 export class ProgramasComponent implements OnInit {
-  descricao: any = [
+  items: any = [
     {
       imagem:
         'https://img.utdstc.com/icon/b94/5f2/b945f238cde73bdaa66d821f2bc1c26c6bac99a880faf9657f447b4be9b2672d:100',
