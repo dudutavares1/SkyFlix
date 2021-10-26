@@ -1,3 +1,11 @@
-<p>
-  filmes works!
-</p>
+<div class="card principal" *ngFor="let categoria of filmes">
+  <img src="{{categoria.imagem}}" class="card_imagem" alt="#">
+  <div class="card-body">
+    <h4 class="card-title">{{categoria.titulo}}</h4><br>
+    <h6>Informações</h6>
+    <span class="lancamento">Lançamento: {{categoria.lancamento}} </span><br>
+    <span class="Plataforma ">Plataforma: {{categoria.plataforma}} </span><br>
+    <span class="Genero">Genero: {{categoria.genero}}</span><br> <br>
+  </div>
+  <button type="button" class="btn btn-dark"><a href={{categoria.link}} target=_blank>Download</a> </button>
+</div>

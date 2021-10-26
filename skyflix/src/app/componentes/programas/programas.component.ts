@@ -9,12 +9,11 @@ import { ProgramasService } from 'src/app/services/programas.service';
 })
 export class ProgramasComponent implements OnInit {
   programas: Programas[] = [];
-  programasService: any;
 
-  constructor(private Service: ProgramasService) {}
+  constructor(private ProgramasService: ProgramasService) {}
 
   ngOnInit() {
-    this.programasService.getCategorias().subscribe((programas: Programas[]) => {
+    this.ProgramasService.getCategorias().subscribe((programas) => {
       this.programas = programas;
       console.log(programas);
     });
