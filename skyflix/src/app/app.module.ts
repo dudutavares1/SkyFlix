@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { JogosComponent } from './componentes/jogos/jogos.component';
 import { ProgramasComponent } from './componentes/programas/programas.component';
+import { SeriesComponent } from './componentes/series/series.component';
+import { FilmesComponent } from './componentes/filmes/filmes.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { ProgramasComponent } from './componentes/programas/programas.component'
     RodapeComponent,
     JogosComponent,
     ProgramasComponent,
+    SeriesComponent,
+    FilmesComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],

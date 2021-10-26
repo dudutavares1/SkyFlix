@@ -12,7 +12,7 @@ export class ProgramasService {
   constructor(private http: HttpClient) {}
 
   getCategorias(): Observable<Programas[]> {
-   // const url = `${this.baseUrl}/${categoria}`;
+    // const url = `${this.baseUrl}/${categoria}`;
     return this.http.get<Programas[]>(this.baseUrl);
   }
 }

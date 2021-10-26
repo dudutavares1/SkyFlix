@@ -12,7 +12,7 @@ export class SeriesService {
   constructor(private http: HttpClient) {}
 
   getCategorias(): Observable<Series[]> {
-    // const url = `${this.baseUrl}/${categoria}`;
+   // const url = `${this.baseUrl}/${categoria}`;
     return this.http.get<Series[]>(this.baseUrl);
   }
 }
