@@ -1,8 +1,9 @@
-
- <h1 class="texto1"> Tutorial de Instalação</h1>
- <section class="main-container" *ngFor="let categoria of filmes" >
-    <div class="location" id="home">
-        <div class="box">
-          <a href="{{categoria.link}}" target=_blank><img src="{{categoria.imagem}}"alt=""></a>
-        </div>
-    </div>
+<div class="card principal" *ngFor="let categoria of filmes">
+  <img src="{{categoria.imagem}}" class="card_imagem" alt="#">
+  <div class="card-body">
+    <h4 class="card-title">{{categoria.titulo}}</h4><br>
+    <h6>Informações</h6>
+    <span class="lancamento">Lançamento: {{categoria.lancamento}} </span><br>
+    <span class="Genero">Genero: {{categoria.genero}}</span><br> <br>
+    <button type="button" class="btn btn-dark"><a href={{categoria.link}} target=_blank>Assistir</a> </button>
+  </div>
