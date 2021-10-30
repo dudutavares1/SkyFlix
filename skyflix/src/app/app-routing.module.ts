@@ -5,12 +5,14 @@ import { FilmesComponent } from './componentes/filmes/filmes.component';
 import { JogosComponent } from './componentes/jogos/jogos.component';
 import { ProgramasComponent } from './componentes/programas/programas.component';
 import { SeriesComponent } from './componentes/series/series.component';
+import { TemporadasComponent } from './componentes/temporadas/temporadas.component';
 
 const routes: Routes = [
   { path: 'jogos', component: JogosComponent },
   { path: 'filmes', component: FilmesComponent },
   { path: 'programas', component: ProgramasComponent },
   { path: 'seriesAcao', component: SeriesComponent },
+  { path: 'temporadas', component: TemporadasComponent },
 ];
 
 @NgModule({

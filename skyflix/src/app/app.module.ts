@@ -12,6 +12,7 @@ import { JogosComponent } from './componentes/jogos/jogos.component';
 import { ProgramasComponent } from './componentes/programas/programas.component';
 import { SeriesComponent } from './componentes/series/series.component';
 import { FilmesComponent } from './componentes/filmes/filmes.component';
+import { TemporadasComponent } from './componentes/temporadas/temporadas.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FilmesComponent } from './componentes/filmes/filmes.component';
     ProgramasComponent,
     SeriesComponent,
     FilmesComponent,
+    TemporadasComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
