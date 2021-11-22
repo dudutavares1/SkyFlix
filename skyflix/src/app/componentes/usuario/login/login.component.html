@@ -17,19 +17,19 @@
                   <p>Por favor digite seu login</p>
 
                   <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control" placeholder="Digite seu E-mail" />
+                    <input ngModel="usuario.login" type=" text" id="usuario" class="validate"
+                      placeholder="Digite seu E-mail" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" placeholder="Digite sua Senha" />
+                    <input ngModel="usuario.senha" type="password" id="senha" class="validate"
+                      placeholder="Digite sua Senha"/>
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Entrar</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" name="action"
+                      (click)="fazerLogin">Entrar</button>
                   </div>
-
-                  
-
                 </form>
 
               </div>

@@ -14,6 +14,10 @@ import { SeriesComponent } from './componentes/series/series.component';
 import { FilmesComponent } from './componentes/filmes/filmes.component';
 import { TemporadasComponent } from './componentes/temporadas/temporadas.component';
 
+import { LoginComponent } from './componentes/usuario/login/login.component';
+
+import { AuthService } from './componentes/usuario/login/auth.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +28,11 @@ import { TemporadasComponent } from './componentes/temporadas/temporadas.compone
     SeriesComponent,
     FilmesComponent,
     TemporadasComponent,
+    LoginComponent
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
-  providers: [],
+  providers: [AuthService],
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}
