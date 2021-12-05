@@ -12,7 +12,9 @@ export class JogoService {
   constructor(private http: HttpClient) {}
 
   getCategorias(): Observable<Jogo[]> {
-   // const url = `${this.baseUrl}/${categoria}`;
+    // const url = `${this.baseUrl}/${categoria}`;
     return this.http.get<Jogo[]>(this.baseUrl);
   }
 }
+
+
