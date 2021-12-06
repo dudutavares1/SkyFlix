@@ -5,6 +5,7 @@ export class Jogo {
   plataforma: string;
   genero: string;
   link: string;
+  categoria: string;
 
   constructor(
     imagem: string,
@@ -12,7 +13,8 @@ export class Jogo {
     lancamento: number,
     plataforma: string,
     genero: string,
-    link: string
+    link: string,
+    categoria: string
   ) {
     this.imagem = imagem;
     this.titulo = titulo;
@@ -20,5 +22,6 @@ export class Jogo {
     this.plataforma = plataforma;
     this.genero = genero;
     this.link = link;
+    this.categoria = categoria;
   }
 }

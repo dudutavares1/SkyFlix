@@ -28,7 +28,7 @@ import { AuthService } from './componentes/usuario/login/auth.service';
     SeriesComponent,
     FilmesComponent,
     TemporadasComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [AuthService],

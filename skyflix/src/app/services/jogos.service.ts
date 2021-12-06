@@ -11,10 +11,9 @@ export class JogoService {
 
   constructor(private http: HttpClient) {}
 
-  getCategorias(): Observable<Jogo[]> {
-    // const url = `${this.baseUrl}/${categoria}`;
-    return this.http.get<Jogo[]>(this.baseUrl);
+  getCategorias(categoria: string): Observable<Jogo[]> {
+    const url = `${this.baseUrl}/$categoria`;
+    console.log(categoria);
+    return this.http.get<Jogo[]>(url);
   }
 }
-
-
