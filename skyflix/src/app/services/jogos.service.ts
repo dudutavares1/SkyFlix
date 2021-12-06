@@ -12,7 +12,7 @@ export class JogoService {
   constructor(private http: HttpClient) {}
 
   getCategorias(categoria: string): Observable<Jogo[]> {
-    const url = `${this.baseUrl}/$categoria`;
+    const url = `${this.baseUrl}/${categoria}`;
     console.log(categoria);
     return this.http.get<Jogo[]>(url);
   }

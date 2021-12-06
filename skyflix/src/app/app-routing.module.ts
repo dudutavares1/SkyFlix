@@ -11,7 +11,7 @@ import { CadastroComponent } from './componentes/usuario/cadastro/cadastro.compo
 import { LoginComponent } from './componentes/usuario/login/login.component';
 
 const routes: Routes = [
-  { path: 'jogos/:categoria', component: JogosComponent },
+  { path: 'jogos/:category', component: JogosComponent },
 
 
   { path: 'filmes', component: FilmesComponent },
